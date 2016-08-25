@@ -280,6 +280,7 @@ export default function getMuiTheme(muiTheme, ...more) {
       backgroundColor: palette.primary1Color,
       textColor: fade(palette.alternateTextColor, 0.7),
       selectedTextColor: palette.alternateTextColor,
+      height: 48,
     },
     textField: {
       textColor: palette.textColor,
