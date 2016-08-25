@@ -40,6 +40,10 @@ class SelectField extends Component {
      */
     disabled: PropTypes.bool,
     /**
+     * DropDown Menu style
+     */
+    dropDownMenuStyle: PropTypes.object,
+    /**
      * Override the inline-styles of the error element.
      */
     errorStyle: PropTypes.object,
@@ -142,6 +146,7 @@ class SelectField extends Component {
     const {
       autoWidth,
       children,
+      dropDownMenuStyle,
       style,
       labelStyle,
       iconStyle,
@@ -194,6 +199,7 @@ class SelectField extends Component {
           style={Object.assign(styles.dropDownMenu, menuStyle)}
           labelStyle={Object.assign(styles.label, labelStyle)}
           iconStyle={Object.assign(styles.icon, iconStyle)}
+          menuStyle={dropDownMenuStyle}
           underlineStyle={styles.hideDropDownUnderline}
           autoWidth={autoWidth}
           value={value}
